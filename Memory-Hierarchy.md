@@ -252,8 +252,9 @@ In MIPS R2000, the MMU is in charge of handling VM. On top of that, several inst
 
 It's interesting to see how Virtual Address Translation is performed on top of the TLB
 
-![](/assets/99.png)
+<img src ="/assets/99.png" width="350" >
 
 The DECstation 3100 also shows an interesting cache access model:
 
-![](/assets/100.png)
+<img src ="/assets/100.png" width="350" >
+
