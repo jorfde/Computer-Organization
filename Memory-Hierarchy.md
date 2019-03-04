@@ -25,9 +25,8 @@ Transfers between cache and main memory occur in blocks, which are typically set
 Blocks are used to exploit locality because when there is a read miss, the full block containing the missing word is brought to cache and copied to a cache slot or line
 
 
-<img src = "/media/11.png" >
 
-![](/media/11.png)
+![](/assets/11.png)
 
 * **Thit:** time to access data in cache
 * **Tmiss:** time to access data otherwise \\( \space Thit << Tmiss\\)
@@ -107,7 +106,7 @@ Set = number of bits N to address Sets (2^n)
 
 ```
 
-![](/users/jorge/desktop/22.png)
+![](/assets/22.png)
 
 #### EXERCISE 2
 
@@ -126,7 +125,7 @@ Hit rate = (accesses - misses) / accesses
 A program performs some operation over a vector (they give you the program). The program runs on a processor with one level of dual cache (I-Cache and D-Cache memories). Each cache has a capacity of 64 KB. Both caches use direct mapping and a block size of 8 Bytes. Fill the following table for the given sizes of Vector.
 
 
-![](/users/jorge/desktop/33.png)
+![](/assets/33.png)
 
 
 Misses can be of one of these types:
@@ -165,7 +164,7 @@ And several policies for handling write misses:
 
 
 
-![](/users/jorge/desktop/44.png)
+![](/assets/44.png)
 
 ### Replacement algorithms 
 
@@ -184,7 +183,7 @@ We introduce a second level of cache, larger but slower than L1. Now, the averag
 Accesses to cache in a multilevel system may be **sequential** (an L1 miss is followed by a L2 access) or **parallel** (both L1 and L2 are accessed in parallel).
 
 
-![](/users/jorge/desktop/55.png)
+![](/assets/55.png)
 
 ### Examples
 * Intel Pentium
@@ -215,7 +214,7 @@ Address translation is called *paging*, a VM page is called a *block* and a VM m
 Translation is performed using a page table, so it's fast. Remember that a virtual address is structured into two fields: Virtual page number and offset.
 
 
-![](/users/jorge/desktop/66.png)
+![](/assets/66.png)
 
 Thus, the design choices for VM systems are mostly morivated by the high cost of page faults, so:
 
@@ -236,9 +235,9 @@ But, even with all of this, we must remember that the page table resides in main
 The Translation Lookaside Buffer is possible thanks to locality and it effectiviley means that only a small portion of memory is in use at a particular time.
 
 
-![](/users/jorge/desktop/77.png)
+![](/assets/77.png)
 
-![](/users/jorge/desktop/88.png)
+![](/assets/88.png)
 
 
 ## 3. An example combining cache and VM 
@@ -253,8 +252,8 @@ In MIPS R2000, the MMU is in charge of handling VM. On top of that, several inst
 
 It's interesting to see how Virtual Address Translation is performed on top of the TLB
 
-![](/users/jorge/desktop/99.png)
+![](/assets/99.png)
 
 The DECstation 3100 also shows an interesting cache access model:
 
-![](/users/jorge/desktop/100.png)
+![](/assets/100.png)
